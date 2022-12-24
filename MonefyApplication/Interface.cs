@@ -36,14 +36,18 @@ namespace MonefyApplication
                 }
             }
         }
-        public static void Usual_Console_Operations()
+        public static void First_Menu_Interface(Account account)
         {
-            Thread.Sleep(10000);
-            Console.Clear();
-           // First_View();
+            Console.WriteLine($"Total Balance: {account.Total_balance}");
+            Console.WriteLine($"Expences: {account.Expences}");
+            Console.WriteLine($"Incomes: {account.Incomes}");
+            Console.WriteLine($"Date: {DateTime.Today.ToShortDateString()} ");
+            Console.WriteLine($"Currency: {account.Currency} \n\n");
         }
-            
-            
-
+        public static void Thread_Operations(int sleep_time)
+        {
+            Thread.Sleep(sleep_time);
+            Console.Clear();
+        }
   }
 }

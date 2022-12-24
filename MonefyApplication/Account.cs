@@ -2,7 +2,6 @@
 
 namespace MonefyApplication
 {
-    //Account initialization
     class Account
     {
         public double Total_balance { get; set; }
