@@ -38,6 +38,7 @@ namespace MonefyApplication
         }
         public static void First_Menu_Interface(Account account)
         {
+            Console.WriteLine($"You are currently in: {account.Name} account");
             Console.WriteLine($"Total Balance: {account.Total_balance}");
             Console.WriteLine($"Expences: {account.Expences}");
             Console.WriteLine($"Incomes: {account.Incomes}");
